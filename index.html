@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .weather {}
+
+    input {}
+
+    main .div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        background: linear-gradient(229.56deg, #3E2D8F 26.99%, rgba(157, 82, 172, 0.7) 95.21%);
+        width: 700px;
+        height: 700px;
+        margin: 0 auto;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        color: white;
+
+        font-family: 'Arial', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+
+
+
+    }
+
+    img {
+        width: 30%;
+        height: 20%;
+        background-color: none;
+    }
+
+    .box {
+        padding-top: 80px;
+    }
+
+    input {
+        width: 358px;
+        height: 58px;
+        top: 15px;
+        left: 40px;
+        angle: 0deg;
+        opacity: 1;
+        border-radius: 30px;
+        border-width: 2px;
+        border: 2px solid rgba(62, 45, 143, 1);
+        background: rgba(217, 217, 217, 0.1);
+
+    }
+
+    button {
+
+        width: 100px;
+        height: 58px;
+        top: 15px;
+        left: 40px;
+        angle: 0deg;
+        opacity: 1;
+        border-radius: 30px;
+        border-width: 2px;
+        border: 2px solid rgba(62, 45, 143, 1);
+        background: rgba(217, 217, 217, 0.1);
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+
+
+    }
+
+    button:hover {
+        background-color: rgba(62, 45, 143, 0.8);
+        color: white;
+    }
+
+    #weatherResult {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+
+    @media (max-width: 768px) {
+        main {
+            width: 90%;
+            height: auto;
+            padding: 10px;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+        }
+
+        input,
+        button {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        #weatherResult {
+            font-size: 18px;
+        }
+        button{
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+        }
+        img{
+            width: 50%;
+            height: auto;
+            object-fit: cover;
+
+        }
+        input {
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+        }
+        main .box {
+            padding-top: 20px;
+        }
+        main .div {
+            flex-direction: column;
+            align-items: stretch;
+        }
+        main .div input {
+            margin-bottom: 10px;
+        }
+        main .div button {
+            width: 100%;
+        }
+        main .div {
+            width: 100%;
+            justify-content: center;
+        }
+        main .box {
+            width: 100%;
+            align-items: center;
+        }
+        main {
+            padding: 20px;
+            box-shadow: none;
+            border-radius: 0;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        main .box img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        main .box {
+            padding-top: 20px;
+        }
+        main .div {
+            flex-direction: column;
+            align-items: stretch;
+        }
+        main .div input {
+            margin-bottom: 10px;
+        }
+        main .div button {
+            width: 100%;
+        }
+        main .div {
+            width: 100%;
+            justify-content: center;
+        }
+        main .box {
+            width: 100%;
+            align-items: center;
+        }
+        main {
+            padding: 20px;
+            box-shadow: none;
+            border-radius: 0;
+            height: 960px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        input {
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+        }
+        button {
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+        }
+        main .box img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        main .box {
+            padding-top: 20px;
+        }
+        main .div {
+            flex-direction: column;
+            align-items: stretch;
+        }
+        main .div input {
+            margin-bottom: 10px;
+        }
+        main .div button {
+            width: 40%;
+        }
+        main .div {
+            width: 100%;
+            justify-content: center;
+        }
+        main .box {
+            width: 100%;
+            align-items: center;
+        }
+        main {
+            padding: 20px;
+            box-shadow: none;
+            border-radius: 0;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        input {
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+        }
+        button {
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+        }
+    }
+
+
+
+
+</style>
+
+<body>
+    <main>
+        <div class="div"><input type="text" id="inputField" placeholder="search random country weather">
+            <button id="searchButton">Search</button>
+        </div> <br>
+
+        <div class="box">
+            <img src="" alt="">
+            <div id="weatherResult">
+
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
